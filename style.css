@@ -1,6 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     font-family: "Alice", serif;
     line-height: 150%;
+    font-weight: 400;
     --text-color-primary: #291B1A;
     --text-color-secundary: #573A37;
     --text-color-on-bg: #F0E8C2;
@@ -21,16 +27,37 @@ body {
     margin: 48px auto;
 }
 
+main {
+    padding: 24px;
+}
+
+section + section {
+    margin-top: 24px;
+}
+
 h1 {
     line-height: 140%;
     font-size: 40px;
     color: var(--text-color-primary);
-
 }
 
 h2 {
     font-size: 24px;
     color: var(--text-color-primary);
+    line-height: 150%;
+}
+
+h1, h2 {
+    font-weight: 200;
+    margin-bottom: 4px;
+}
+
+ul {
+    padding-left: 24px;
+}
+
+#about p + p {
+    margin-top: 12px;
 }
 
 p, li {
