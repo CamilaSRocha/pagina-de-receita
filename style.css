@@ -1,3 +1,11 @@
+:root {
+    font-family: "Alice", serif;
+    line-height: 150%;
+    --text-color-primary: #291B1A;
+    --text-color-secundary: #573A37;
+    --text-color-on-bg: #F0E8C2;
+}
+
 body {
     background-image: url(assets/bg-image.jpg);
     background-size: cover;
@@ -11,4 +19,20 @@ body {
     border-radius: 24px;
 
     margin: 48px auto;
+}
+
+h1 {
+    line-height: 140%;
+    font-size: 40px;
+    color: var(--text-color-primary);
+
+}
+
+h2 {
+    font-size: 24px;
+    color: var(--text-color-primary);
+}
+
+p, li {
+    color: var(--text-color-secundary);
 }
